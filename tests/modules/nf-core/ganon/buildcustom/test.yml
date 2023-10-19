@@ -5,7 +5,7 @@
     - ganon/buildcustom
   files:
     - path: output/ganon/test.ibf
-      md5sum: 77225268c51684612d72ffb85ed2209a
+      md5sum: be2e5c4b521cbf6b2c36322a3679636f
     - path: output/ganon/test.info.tsv
       md5sum: 2e1fdfb433085ea2d5a4c69e3aeb3f0e
     - path: output/ganon/test.tax
