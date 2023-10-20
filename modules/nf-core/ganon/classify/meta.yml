@@ -30,7 +30,7 @@ input:
   - dbs:
       type: file
       description: Ganon database files from build or build-custom
-      pattern: "*.{ibf,tax}"
+      pattern: "*.{ibf,hibf,tax}"
 
 output:
   - meta:

@@ -49,7 +49,7 @@ output:
   - db:
       type: file
       description: ganon database files
-      pattern: "*.{ibf,tax}"
+      pattern: "*.{ibf,hibf,tax}"
   - info:
       type: file
       description: Copy of target info generated. Can be used for updating database.

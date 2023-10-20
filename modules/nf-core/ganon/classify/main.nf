@@ -28,11 +28,11 @@ process GANON_CLASSIFY {
     def prefix = task.ext.prefix ?: "${meta.id}"
     def input  = meta.single_end ? "--single-reads ${fastqs}" : "--paired-reads ${fastqs}"
     """
-    dbprefix=\$(find -L . -name '*.ibf' | sed 's/\\.ibf\$//')
+    dbprefix=\$(find -L . -name '*.ibf' -o -name '*.hibf' | sed 's/\\.[^.]*\$//')
 
     ganon \\
         classify \\
-        --db-prefix \${dbprefix%%.ibf} \\
+        --db-prefix \${dbprefix} \\
         $args \\
         --threads $task.cpus \\
         --output-prefix ${prefix} \\

@@ -13,7 +13,7 @@ process GANON_BUILDCUSTOM {
     path genome_size_files
 
     output:
-    tuple val(meta), path("*.{ibf,tax}")          , emit: db
+    tuple val(meta), path("*.{ibf,hibf,tax}")     , emit: db
     tuple val(meta), path("*.info.tsv")           , emit: info            , optional: true
     path "versions.yml"                           , emit: versions
 
